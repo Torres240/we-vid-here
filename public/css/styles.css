@@ -1,0 +1,126 @@
+
+
+
+html {
+    font-size: 100%;
+    line-height: 1.4;
+    color: black;
+    background-color: white;
+    /* keep mobiles from adjusting type size */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Font test (to be removed later if needs replacing) */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*
+ * remove extra space for rich media at bottom of their container
+ * h5b.com/i/440
+ */
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+
+/*
+ * Clearfix: contain floats, adapted from HTML5 Boilerplate
+ *
+ * For Modern Browsers
+ * 1. The space content is one way to avoid an Opera bug when the 
+ * 'contentditable' attribute is included anywhere else in the document.
+ * Otherwise, it causes space to appear at the top and bottom of elements
+ * that recieve the 'clearfix' class.
+ *
+ * 2. The us of 'table' rather than 'block' is only necessary if using
+ * ':before' to contain the top-margins of child elements.
+ * 
+ * 3. For an alternative method using overflow, see
+ * @link http://webdesignerwall.com/tutorials/css-clearing-floats-with-overflow
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";/*1*/
+    display: table;/*2*/
+}
+
+.clearfix:after {
+    clear:both;
+}
+
+/*
+ * visible to all browsers
+ */
+.visible-all {
+    display: block;
+    visibility: visible;
+}
+
+/*
+ * viible only to scren readers, adapted from HTML5 Boilerplate
+ * @link h5bp.com/v
+ * @link http://www.webaim.org/techniques/css/incisiblecontent/
+ * @link http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ * @link https://github.com/h5bp/html5-boilerplate/issues/194
+ */
+.visible-screenreader {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * extends visible-sceenreader so that tabbed focus still works
+ * adapted from HTML5 Boilerplate
+ * class="visual-screenreader focusable"
+ * h5bp.com/p
+ */
+.visible-screenreader.focusable:active,
+.visible-screenreader.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * invisible for all browsers (including screen readers), removed
+ * from document flow. Adapted from HTML5 Boilerplate
+ * @link http://www.html5boilerplate.com
+ * NOTE: we also apply ARIA-HIDDEN to these elements, and
+ * these must be changed using JavaScript
+ */
+.visible-none {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Always hide an element when it has the 'hidden' HTML attribute.
+ * from Pure CSS
+ */
+[hidden] {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * ---------------------------------
+ * IMAGES
+ * ---------------------------------
+ */
+
+/*
+ * ---------------------------------
+ * STYLES FOR WRAPPER
+ * ---------------------------------
+ */
